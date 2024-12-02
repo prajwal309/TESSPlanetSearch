@@ -7,12 +7,10 @@ Institute: MIT
 Just run the following
 ./runTarget.sh TIC ID
 
-This first checks if the data is locally downloaded.
-
-And once all the TESS data has been downloaded, it runs TLS. 
+This first downloads the data. And once all the TESS data has been downloaded, it runs BLS algorithm as is implemented in astropy. 
 
 ## Dependencies
-TLS
 Lightcurve
 Astropy
+wotan - to flatten the lightcurve
 
