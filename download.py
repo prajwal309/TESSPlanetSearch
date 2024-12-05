@@ -23,6 +23,8 @@ def download_tess_data(tic_id, download_dir="TessData"):
     # Ensure the download directory exists
     Target = f"TIC {tic_id}"
     search_result = lk.search_lightcurve(Target, mission="TESS")
+    #search_result = lk.search_lightcurve(Target)
+    #print(search_result)
     SaveDirectory = os.path.join(download_dir, Target.replace(" ", ""))
 
     if not os.path.exists(SaveDirectory):
@@ -38,5 +40,5 @@ def download_tess_data(tic_id, download_dir="TessData"):
 
         logging.info(f"Downloaded TESS data for TIC ID {tic_id} to {SaveDirectory}")
 # Example Usage
-tic_id = "188035578"  # Replace with your desired TIC ID
+tic_id = "3666880"  # Replace with your desired TIC ID
 download_tess_data(tic_id)

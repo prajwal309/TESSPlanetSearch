@@ -14,3 +14,6 @@ Lightcurve
 Astropy
 wotan - to flatten the lightcurve
 
+
+## To do
+Fix the pipeline so that it works for TIC 3666880
